@@ -19,11 +19,9 @@ def chat():
         inp=(inp,)
         d=c.execute("SELECT * FROM CHAT WHERE question=?",inp)
         for r in d:
-            print("r=",r)
             if r[2]:
                 l.append(r[2])
         count=len(l)
-        print(count)
         if count!=0:
             rl=random.randrange(0,count,1)
             print(rl)
