@@ -29,7 +29,7 @@ def chat():
             print("bot: ",l[rl])
             engine.runAndWait()
         else:
-            s="sorry, can't found answer to the question"
+            s="sorry, Answer not found :-("
             engine.say(s)
             print("bot:",s)
             engine.runAndWait()
